@@ -1,0 +1,273 @@
+
+{
+  "request_footprints": [
+    {
+      "timestamp": 1669100565.261176,
+      "interface": "eth1",
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / Dot1Q / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S VLAN: 31",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    },
+    {
+      "timestamp": 1669100565.263197,
+      "interface": "1eaa74a1d8f8",
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S ",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    }
+  ],
+  "reply_footprints": [
+    {
+      "timestamp": 1669100565.264288,
+      "interface": "1eaa74a1d8f8",
+      "host": "10.40.30.98",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": 1669100565.18236,
+      "interface": "38f748eff523",
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": 1669100565.184776,
+      "interface": "eth1",
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / Dot1Q / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA VLAN: 31",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    }
+  ],
+  "result": true,
+  "footprints": [
+    {
+      "timestamp": null,
+      "interface": "eth1",
+      "reply": false,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.99",
+      "packet": null
+    },
+    {
+      "timestamp": 1669100565.261176,
+      "interface": "eth1",
+      "reply": false,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / Dot1Q / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S VLAN: 31",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    },
+    {
+      "timestamp": 1669100565.263197,
+      "interface": "1eaa74a1d8f8",
+      "reply": false,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.23",
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S ",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    },
+    {
+      "timestamp": 1669100565.264288,
+      "interface": "1eaa74a1d8f8",
+      "reply": true,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.23",
+      "host": "10.40.30.98",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": null,
+      "interface": "eth1",
+      "reply": true,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.98",
+      "packet": null
+    },
+    {
+      "timestamp": 1669100565.184776,
+      "interface": "eth1",
+      "reply": true,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / Dot1Q / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA VLAN: 31",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": 1669100565.18236,
+      "interface": "38f748eff523",
+      "reply": true,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.184",
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    }
+  ],
+  "request_road": [
+    {
+      "timestamp": null,
+      "interface": "eth1",
+      "reply": false,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.99",
+      "packet": null
+    },
+    {
+      "timestamp": 1669100565.261176,
+      "interface": "eth1",
+      "reply": false,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / Dot1Q / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S VLAN: 31",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    },
+    {
+      "timestamp": 1669100565.263197,
+      "interface": "1eaa74a1d8f8",
+      "reply": false,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.23",
+      "host": "10.40.30.98",
+      "packet": "38:f7:48:ef:f5:23 > 1e:aa:74:a1:d8:f8 Ether / IP / TCP 192.168.31.184:49809 > 192.168.31.23:9153 S ",
+      "src": "192.168.31.184",
+      "dst": "192.168.31.23"
+    }
+  ],
+  "reply_road": [
+    {
+      "timestamp": 1669100565.264288,
+      "interface": "1eaa74a1d8f8",
+      "reply": true,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.23",
+      "host": "10.40.30.98",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": null,
+      "interface": "eth1",
+      "reply": true,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.98",
+      "packet": null
+    },
+    {
+      "timestamp": 1669100565.184776,
+      "interface": "eth1",
+      "reply": true,
+      "interface_type": "nic",
+      "interface_ip": null,
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / Dot1Q / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA VLAN: 31",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    },
+    {
+      "timestamp": 1669100565.18236,
+      "interface": "38f748eff523",
+      "reply": true,
+      "interface_type": "pod",
+      "interface_ip": "192.168.31.184",
+      "host": "10.40.30.99",
+      "packet": "1e:aa:74:a1:d8:f8 > 38:f7:48:ef:f5:23 Ether / IP / TCP 192.168.31.23:9153 > 192.168.31.184:49809 SA ",
+      "src": "192.168.31.23",
+      "dst": "192.168.31.184"
+    }
+  ],
+  "unexpected_envs": [],
+  "npc_data": [
+    {
+      "Permit": true,
+      "SrcInfo": {
+        "IP": "192.168.31.184",
+        "Port": 0,
+        "VlanID": 31,
+        "MacAddr": "38:f7:48:ef:f5:23",
+        "HostIP": "10.40.30.99",
+        "Local": true,
+        "IPType": "POD",
+        "Gateway": "192.168.31.254",
+        "Namespace": "default",
+        "Name": "dns-tools2-g6bll",
+        "BridgeMac": ""
+      },
+      "DstInfo": {
+        "IP": "192.168.31.23",
+        "Port": 0,
+        "VlanID": 31,
+        "MacAddr": "1e:aa:74:a1:d8:f8",
+        "HostIP": "10.40.30.98",
+        "Local": false,
+        "IPType": "POD",
+        "Gateway": "192.168.31.254",
+        "Namespace": "kube-system",
+        "Name": "coredns-545d6fc579-wzkvx",
+        "BridgeMac": ""
+      },
+      "TraceMessage": {
+        "Code": "5005",
+        "Message": "the traffic is permitted by default, no network policy defined for IP \"192.168.31.184\" or \"192.168.31.23\""
+      },
+      "host": "10.40.30.99"
+    },
+    {
+      "Permit": true,
+      "SrcInfo": {
+        "IP": "192.168.31.184",
+        "Port": 0,
+        "VlanID": 31,
+        "MacAddr": "38:f7:48:ef:f5:23",
+        "HostIP": "10.40.30.99",
+        "Local": false,
+        "IPType": "POD",
+        "Gateway": "192.168.31.254",
+        "Namespace": "default",
+        "Name": "dns-tools2-g6bll",
+        "BridgeMac": ""
+      },
+      "DstInfo": {
+        "IP": "192.168.31.23",
+        "Port": 0,
+        "VlanID": 31,
+        "MacAddr": "1e:aa:74:a1:d8:f8",
+        "HostIP": "10.40.30.98",
+        "Local": true,
+        "IPType": "POD",
+        "Gateway": "192.168.31.254",
+        "Namespace": "kube-system",
+        "Name": "coredns-545d6fc579-wzkvx",
+        "BridgeMac": ""
+      },
+      "TraceMessage": {
+        "Code": "5005",
+        "Message": "the traffic is permitted by default, no network policy defined for IP \"192.168.31.184\" or \"192.168.31.23\""
+      },
+      "host": "10.40.30.98"
+    }
+  ],
+  "send_from_ryu": true,
+  "suggestions": null
+}
